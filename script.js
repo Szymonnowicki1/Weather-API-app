@@ -230,9 +230,6 @@ const showInput = () => {
                                                 <div class="item3-day">${roundMin}${oUnit}</div>
                                         </div>
                                     `
-                                    newDiv.addEventListener("click", () => {
-                                        showHourlyForDay(date)
-                                    })
                                     item3.appendChild(newDiv)
                                 }
 
