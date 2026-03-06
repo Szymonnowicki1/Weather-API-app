@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Weather app</title>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><img class="logo" src="./assets/images/logo.svg" alt=""></li>
+        <li>
+          <div class="units-wrapper"><button class="units-btn"><img src="./assets/images/icon-units.svg" alt="">Units
+              <img src="./assets/images/icon-dropdown.svg" alt=""></button>
+              <div class="units-absolute active">
+                <div class="switch">Switch to Imperial</div>
+                <div class="units-title">Temperature</div>
+                <div class="units-text celsius">Celcius <img class="checkmark" src="./assets/images/icon-checkmark.svg" alt=""></div>
+                <div class="units-text fahrenheit">Fahrenheit <img class="checkmark" src="./assets/images/icon-checkmark.svg" alt=""></div>
+                <div class="units-title">Wind speed</div>
+                <div class="units-text kmh">km/h <img class="checkmark" src="./assets/images/icon-checkmark.svg" alt=""></div>
+                <div class="units-text mph">mph <img class="checkmark" src="./assets/images/icon-checkmark.svg" alt=""></div>
+              </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="main-title">How's the sky looking today?</div>
+    <div class="input-container">
+      <div class="loop">
+        <img class="loop-icon" src="./assets/images/icon-search.svg" alt="">
+        <input type="text" placeholder="Search for a place..." class="single-input">
+        <div class="suggestions ">
+          <div class="suggestion-item"></div>
+          <div class="suggestion-item"></div>
+          <div class="suggestion-item"></div>
+        </div>
+      </div>
+      <button class="search-btn">Search</button>
+    </div>
+  </section>
+  <main>
+    <div class="main-container">
+      <div class="item1">
+        <div class="weather-info">
+          <div class="city">
+            <div class="city-country"></div>
+            <div class="date"></div>
+          </div>
+          <div class="flex">
+            <div class="number"><img class="main-icon" src="" alt=""><span class="temp"></span></div>
+            <div class="number"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <div class="square">
+          <div class="item2-text">Feels Like</div>
+          <div class="item2-number feels"></div>
+        </div>
+        <div class="square">
+          <div class="item2-text">Humidity</div>
+          <div class="item2-number humidity"></div>
+        </div>
+        <div class="square">
+          <div class="item2-text">Wind</div>
+          <div class="item2-number wind"></div>
+        </div>
+        <div class="square">
+          <div class="item2-text">Precipitation</div>
+          <div class="item2-number precipitation"></div>
+        </div>
+      </div>
+      <div class="item3-title">Daily forecast</div>
+      <div class="item3">
+      </div>
+      <div class="item4">
+        <div class="item4-flex">
+          <div class="hourly">Hourly forecast</div>
+          <div class="week-wrapper">
+            <button class="week-btn"></button>
+            <div class="days active">
+              <div class="day">Monday</div>
+              <div class="day">Tuesday</div>
+              <div class="day">Wednesday</div>
+              <div class="day">Thursday</div>
+              <div class="day">Friday</div>
+              <div class="day">Saturday</div>
+              <div class="day">Sunday</div>
+            </div>
+          </div>
+        </div>
+        <div class="column-container">
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
