@@ -8,7 +8,7 @@ The app uses the Open-Meteo API to fetch weather data and city suggestions.
 
 🚀 Live Demo
 
-https://your-live-site-link.com
+https://szymonnowicki1.github.io/Weather-API-app/
 
 🛠 Technologies
 
